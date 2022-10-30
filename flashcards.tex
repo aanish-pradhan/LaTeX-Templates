@@ -1,0 +1,65 @@
+% An editable LaTeX template for flashcards.
+%
+% @author Andrew Stacey
+% @version 01/04/2013
+%
+% @author Aanish Pradhan
+% @version 10/30/2022
+
+% DOCUMENT OPTIONS
+\documentclass{article}
+
+% IMPORT PACKAGES
+\usepackage{amsfonts} % Mathematics fonts
+\usepackage{amsmath} % Mathematics typesetting
+\usepackage{amssymb} % Mathematics symbols
+\usepackage{amsthm} % Mathematics theorems
+\usepackage[paperwidth = .5\paperwidth, 
+	paperheight = .25\paperheight]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{pgfpages}
+
+% DOCUMENT & PACKAGE SETTINGS
+\pagestyle{empty}
+\thispagestyle{empty}
+\pgfpagesuselayout{8 on 1}[a4paper]
+\makeatletter
+\@tempcnta=1\relax
+\loop\ifnum\@tempcnta<9\relax
+\pgf@pset{\the\@tempcnta}{bordercode}{\pgfusepath{stroke}}
+\advance\@tempcnta by 1\relax
+\repeat
+\makeatother
+
+% DEFINE COMMANDS & ENVIRONMENTS
+
+%% Flashcard Environment
+\newenvironment{flashcard}[2][]{%
+\noindent  \textbf{\textsc{#1}}
+
+\vfill
+\centerline{{\Large\emph{#2}}}
+\vfill
+\newpage
+}
+{\newpage}
+
+% BEGIN DOCUMENT
+\begin{document}
+
+    % % Example Flashcard (Select this line to "\end{flashcard}" and uncomment 
+    % % with "Ctrl/Cmd + /")
+    % \begin{flashcard}[Formula]{Singular Value Decomposition (SVD)}
+    %     \begin{align}
+    %         \mathbf{A} = \mathbf{U\Sigma V}^{T} \nonumber
+    %     \end{align}
+        
+    %     \begin{center}
+    %         $\mathbf{A}$ - $m \times n$ matrix \\
+    %         $\mathbf{U}$ - $m \times m$ Orthonormal/unitary matrix \\
+    %         $\mathbf{\Sigma}$ - $m \times n$ Scalar matrix \\
+    %         $\mathbf{V}^{T}$ - $n \times n$ Orthonormal/unitary matrix
+    %     \end{center}
+    % \end{flashcard}
+
+\end{document}
