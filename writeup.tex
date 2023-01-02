@@ -1,0 +1,64 @@
+\documentclass[prb,twocolumn]{revtex4}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+
+\begin{document}
+\title{Title}
+
+\author{Name}
+\affiliation {
+Physics Department, Virginia Tech, Blacksburg, Virginia 24061, USA\\
+}
+
+
+\begin{abstract}
+Absract: A few sentences summarizing the topics of each problem.  The document should be in APS PRB format.  
+\end{abstract}
+
+\maketitle
+
+\section{Problem 1}
+
+\noindent
+Your answers should be written in prose with proper grammar and spelling to include:\\
+1) A brief (few sentence) introduction discussing the problem to be addressed.\\
+2) A brief explanation of the method(s) used.\\
+3) Any equations you might find necessary in explanations (define all symbols).  Equations can be written inline, $E=mc^{2}$, or in array form:
+\begin{eqnarray}
+E=mc^{2}
+\label{nameforequation}
+\end{eqnarray}
+4) At least one plot showing your results (Label all axes and explain the graph in the caption/text) \\
+5) A brief analysis/discussion of results that shows you have answered (and understood) the problem.  \\
+
+%To insert a figure, remove % from each line and put file fig1.eps in the same directory as the latex file
+% Update for Overleaf version 2: The image file name should not have a suffix, e.g., fig1.eps should be fig
+
+%\begin{figure}[h!]
+%\centerline{\includegraphics [width=3 in] {fig1}} \caption{Plot of something interesting} \label{nameforfigure1}
+%\end{figure}
+
+\section{Problem 2}
+
+\begin{eqnarray}
+F=ma
+\label{namefornewequation}
+\end{eqnarray}
+
+%To insert a figure, remove % from each line and put file fig2.eps in the same directory as the latex file
+
+%\begin{figure}[h!]
+%\centerline{\includegraphics [width=3 in] {fig2}} \caption{Plot of something really interesting} \label{nameforfigure2}
+%\end{figure}
+
+Make sure you include references to documents \cite{thecoursetext} you may have used.
+
+\begin{thebibliography}{99}
+
+\bibitem{thecoursetext} T. Pang, \emph{Introduction to Computational Physics}, Cambridge University Press (2006).
+
+\end{thebibliography}
+
+\end{document}
